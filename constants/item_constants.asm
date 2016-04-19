@@ -103,7 +103,7 @@
 	const PNK_APRICORN ; $65
 	const BLACKGLASSES ; $66
 	const SLOWPOKETAIL ; $67
-	const PINK_BOW     ; $68
+	const SILK_SCARF   ; $68
 	const STICK        ; $69
 	const SMOKE_BALL   ; $6A
 	const NEVERMELTICE ; $6B
@@ -169,7 +169,7 @@
 	const NORMAL_BOX   ; $A7
 	const GORGEOUS_BOX ; $A8
 	const SUN_STONE    ; $A9
-	const POLKADOT_BOW ; $AA
+	const PINK_BOW     ; $AA
 	const ITEM_AB      ; $AB
 	const UP_GRADE     ; $AC
 	const BERRY        ; $AD
@@ -343,6 +343,7 @@ const_value SET 50
 	const HELD_DRAGON_BOOST
 	const HELD_DARK_BOOST
 	const HELD_STEEL_BOOST
+        const HELD_FAIRY_BOOST
 
 const_value SET 70
 	const HELD_CATCH_CHANCE
