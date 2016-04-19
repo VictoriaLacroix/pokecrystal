@@ -251,8 +251,8 @@ BattleAnimations:: ; c906f
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
-	dw BattleAnim_252
-	dw BattleAnim_253
+	dw BattleAnim_DazzlinGleam
+	dw BattleAnim_Moonblast
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
 ; $100
@@ -281,8 +281,6 @@ BattleAnimations:: ; c906f
 ; c929b
 
 BattleAnim_0: ; c929b
-BattleAnim_252: ; c929b
-BattleAnim_253: ; c929b
 BattleAnim_254: ; c929b
 BattleAnim_MirrorMove: ; c929b
 	anim_ret
@@ -4897,6 +4895,44 @@ BattleAnim_BeatUp: ; cba84
 	anim_ret
 ; cbab3
 
+BattleAnim_DazzlinGleam:
+	anim_1gfx ANIM_GFX_REFLECT
+	anim_obp0 $0
+	anim_sound 0, 0, SFX_SHINE
+	anim_bgeffect ANIM_BG_17, $0, $1, $40
+	anim_wait 8
+	anim_obj ANIM_OBJ_51,   6, 0,  10, 4, $0
+	anim_wait 32
+	anim_obj ANIM_OBJ_51,   6, 0,  10, 4, $0
+	anim_wait 64
+	anim_1gfx ANIM_GFX_BEAM
+	anim_call BattleAnim_DazzlinGleam_branch_cbb39
+        anim_wait 12
+	anim_resetobp0
+	anim_call BattleAnim_ShowMon_0
+        anim_wait 12
+	anim_ret
+
+BattleAnim_Moonblast:
+	anim_1gfx ANIM_GFX_SHINE
+	anim_bgp $1b
+	anim_bgeffect ANIM_BG_07, $0, $0, $0
+	anim_obj ANIM_OBJ_9E,   0, 0,   5, 0, $0
+	anim_obj ANIM_OBJ_9E,   2, 0,   7, 0, $0
+	anim_obj ANIM_OBJ_9E,   4, 0,   9, 0, $0
+	anim_obj ANIM_OBJ_9E,   6, 0,  11, 0, $0
+	anim_obj ANIM_OBJ_9E,   8, 0,  13, 0, $0
+	anim_wait 1
+	anim_sound 0, 0, SFX_MOONLIGHT
+	anim_wait 63
+	anim_call BattleAnim_FollowPlayerHead_0
+	anim_bgeffect ANIM_BG_TACKLE, $0, $1, $0
+	anim_sound 0, 0, SFX_TACKLE
+	anim_wait 17
+	anim_call BattleAnim_ShowMon_0
+        anim_wait 12
+	anim_ret
+
 BattleAnim_DreamEater_branch_cbab3: ; cbab3
 BattleAnim_GigaDrain_branch_cbab3: ; cbab3
 BattleAnim_LeechLife_branch_cbab3: ; cbab3
@@ -4944,6 +4980,7 @@ BattleAnim_Teleport_branch_cbb12: ; cbb12
 BattleAnim_AuroraBeam_branch_cbb39: ; cbb39
 BattleAnim_HyperBeam_branch_cbb39: ; cbb39
 BattleAnim_Solarbeam_branch_cbb39: ; cbb39
+BattleAnim_DazzlinGleam_branch_cbb39: ; cbb39
 	anim_sound 0, 0, SFX_HYPER_BEAM
 	anim_obj ANIM_OBJ_27,   8, 0,  11, 4, $0
 	anim_wait 4
