@@ -21,7 +21,6 @@ UNUSED_TYPES EQU const_value
 	const TYPE_15
 	const TYPE_16
 	const TYPE_17
-	const TYPE_18
 	const CURSE_T
 UNUSED_TYPES_END EQU const_value
 
@@ -34,5 +33,6 @@ SPECIAL EQU const_value
 	const ICE
 	const DRAGON
 	const DARK
+	const FAIRY_T
 
 TYPES_END EQU const_value

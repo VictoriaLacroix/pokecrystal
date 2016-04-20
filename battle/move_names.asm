@@ -249,3 +249,5 @@
 	db "ROCK SMASH@"
 	db "WHIRLPOOL@"
 	db "BEAT UP@"
+        db "DAZZLE@"
+        db "MOONBLAST@"

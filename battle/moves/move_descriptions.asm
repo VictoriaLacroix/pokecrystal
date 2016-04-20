@@ -250,8 +250,8 @@
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
-	dw MoveFCDescription
-	dw MoveFDDescription
+        dw DazzlinGleamDescription
+        dw MoonblastDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
@@ -1268,3 +1268,11 @@ BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
 ; 2ed44
+
+DazzlinGleamDescription:
+        db   "Emits a dazzling"
+        next "gleam of light.@"
+
+MoonblastDescription:
+        db   "Uses the power"
+        next "of the moon.@"

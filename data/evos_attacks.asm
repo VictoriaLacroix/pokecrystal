@@ -467,9 +467,11 @@ ClefairyEvosAttacks:
 	db 13, DOUBLESLAP
 	db 19, MINIMIZE
 	db 26, DEFENSE_CURL
+        db 30, MOONBLAST
 	db 34, METRONOME
 	db 43, MOONLIGHT
 	db 53, LIGHT_SCREEN
+        db 60, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
@@ -512,8 +514,10 @@ JigglypuffEvosAttacks:
 	db 19, ROLLOUT
 	db 24, DOUBLESLAP
 	db 29, REST
-	db 34, BODY_SLAM
-	db 39, DOUBLE_EDGE
+        db 34, MOONBLAST
+	db 39, BODY_SLAM
+	db 44, DOUBLE_EDGE
+        db 49, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 WigglytuffEvosAttacks:
@@ -1666,6 +1670,7 @@ MrMimeEvosAttacks:
 	db 36, PSYBEAM
 	db 41, BATON_PASS
 	db 46, SAFEGUARD
+        db 51, MOONBLAST
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
@@ -2396,8 +2401,10 @@ TogepiEvosAttacks:
 	db 7, METRONOME
 	db 18, SWEET_KISS
 	db 25, ENCORE
-	db 31, SAFEGUARD
-	db 38, DOUBLE_EDGE
+        db 31, MOONBLAST
+	db 38, SAFEGUARD
+	db 45, DOUBLE_EDGE
+	db 50, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
@@ -2407,8 +2414,10 @@ TogeticEvosAttacks:
 	db 7, METRONOME
 	db 18, SWEET_KISS
 	db 25, ENCORE
-	db 31, SAFEGUARD
-	db 38, DOUBLE_EDGE
+        db 31, MOONBLAST
+	db 38, SAFEGUARD
+	db 45, DOUBLE_EDGE
+	db 50, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:
@@ -2492,8 +2501,10 @@ MarillEvosAttacks:
 	db 10, WATER_GUN
 	db 15, ROLLOUT
 	db 21, BUBBLEBEAM
-	db 28, DOUBLE_EDGE
+        db 28, MOONBLAST
 	db 36, RAIN_DANCE
+	db 42, DOUBLE_EDGE
+	db 50, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 AzumarillEvosAttacks:
@@ -2507,8 +2518,10 @@ AzumarillEvosAttacks:
 	db 10, WATER_GUN
 	db 15, ROLLOUT
 	db 25, BUBBLEBEAM
-	db 36, DOUBLE_EDGE
+        db 36, MOONBLAST
+	db 40, DOUBLE_EDGE
 	db 48, RAIN_DANCE
+	db 60, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 SudowoodoEvosAttacks:
@@ -2845,6 +2858,7 @@ GranbullEvosAttacks:
 	db 28, ROAR
 	db 38, RAGE
 	db 51, TAKE_DOWN
+        db 60, DAZZLINGLEAM
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
